@@ -225,17 +225,22 @@ Why we need it?这样做的好处很明显是在需要控制资源的地方可�
 How to create it? 有两种方式，饿汉式（实例在类加载时实例就被创建）和懒汉式（客户端真正需要用到实例，在getInstance()方法里创建的）。作者还通过hashCode来验证了通过单例模式创建的对象在java虚拟机的确是一个。尽可能使用懒汉式，防止内存泄漏。
 
 The possible problems and solutions:
+
 1.单例模式的创建。上面说到的内存泄漏。
+
   Solution:通过懒汉式创建
 
 2.反射，如果通过反射修改构造函数为public则可能会获得不同的对象实例。
+
   Solution:在构造函数中抛出异常。
 
 3.线程安全
+
   Solution:对getInstance()加synchronized关键字。但是有两个缺点，第一就是上锁的开销比较大,第二就是锁的粒度过大。
   Better solution：采用double-check的方式来解决粒度过大的问题，也就是当检查到null的时候再上锁，上锁之后为了检查是否和上锁之前状态一致，再检查是否是null。
 
 4.序列化和反序列化，反序列化后获得的单例对象可能不一致
+
   solution：通过实现readResolve()方法来解决
 
 下面是代码：
