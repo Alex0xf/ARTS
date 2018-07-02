@@ -9,7 +9,7 @@ You need to create a program that will take an array of two numbers who are notn
 
 先审题，一个数组包含两个不同的整型数据，要返回从小的值到大的值（包含这两个元素）之间的所有值的和。第一想法是用一个for循环，用 Math.max（arr）和Math.min（）获得最大最小值，然后来看了中级解法发现可以结合着数学公式 累加结果=加的个数x（最大值+最小值）/2 即数量*平均值来做。高级解法用了扩展运算符（... arr）允许将实际数组传递给函数而不是逐个元素，这个之前没用到过，涨了知识。
 
-####BasicCode Solution:
+#### BasicCode Solution:
 ```java
 function sumAll(arr) {
 var max = Math.max(arr[0], arr[1]);
@@ -33,7 +33,7 @@ Code Explanation:
 Since the numbers might not be always in order,using max() and min() will help organize.
 
 
-####Intermediate Code Solution:
+#### Intermediate Code Solution:
 ```java
 function sumAll(arr) {
   // Buckle up everything to one!
@@ -59,7 +59,7 @@ Code Explanation:
 
 The line var sortedArr = arr.sort((a,b) => a-b); is probably what will have you more confused. This would be the same as creating a function that returns a-b for the sort() which is the standard way to sort numbers from smallest to largest. Instead using arrow or fat arrow function, we are able to do all that in one single line thus allowing us to write less.
 
-####Advanced Code Solution:
+#### Advanced Code Solution:
 ```java
 function sumAll(arr) {
     var sum = 0;
@@ -155,7 +155,8 @@ class Solution {
 ```
 
 ## Review
-###1.Rest API Calls Made Easy
+### 1.Rest API Calls Made Easy
+
 https://blog.yellowant.com/rest-api-calls-made-easy-7e620e4d3e82
 
 这篇文章是在medium上看到的，碰巧自己昨天有想过API的问题于是来看。自己之前看英文原版文章很少，因此比较费劲，而且对API的了解不是很深，所以先去大概了解了一下API。回过头来看感觉这篇文章没有什么太大的价值，只是介绍了一下Rest API的使用规范。不过也是有收获的。刚接触所以可能很多方面不严谨甚至有错，欢迎大家指出和建议。
@@ -266,4 +267,5 @@ public class SingletonClass implements Serializable {
     protected SingletonClass readResolve() {
         return getInstance();
     }
-}```
+}
+```
