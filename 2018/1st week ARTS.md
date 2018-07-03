@@ -110,7 +110,7 @@ rev = temp;
 However, this approach is dangerous, because the statement temp=rev*10+pop cancause overflow.
 
 Luckily, it is easy to check beforehand whether or this statement would cause an overflow.
-![](1.png)
+<img alt="1st week ARTS-1.png" src="1st week ARTS.assets/1st week ARTS-1.png" width="" height="" >
 
 
 
@@ -168,8 +168,8 @@ https://blog.yellowant.com/rest-api-calls-made-easy-7e620e4d3e82
 #### 1.以下是我对API的了解过程：
 What is API?--自己的理解是 API是客户端与服务器交互的一个媒介。这里的客户端和服务器都是相对应而言的，发出请求的一方都可以被看成是客户端，而响应并操作的看成服务器。API负责记录客户端的请求，发送给服务器并告知需求，服务器接收请求并给出响应，API再返回响应的结果给客户端。
 <p>
-<img alt="1st week ARTS-b17b532f.png" src="assets/1st week ARTS-b17b532f.png" width="450px" height="350px" >
-<img alt="1st week ARTS-65b1256a.png" src="assets/1st week ARTS-65b1256a.png" width="380px" height="350px" >
+<img alt="1st week ARTS-1st week ARTS-65b1256a.png" src="1st week ARTS.assets/1st week ARTS-1st week ARTS-65b1256a.png" width="380px" height="350px">
+<img alt="1st week ARTS-1st week ARTS-b17b532f.png" src="1st week ARTS.assets/1st week ARTS-1st week ARTS-b17b532f.png" width="380px" height="350px">
 </p>
 
 
