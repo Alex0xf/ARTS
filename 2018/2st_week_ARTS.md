@@ -48,9 +48,9 @@ public class Solution {
 ```
 Complexity Analysis
 
-Time complexity : $O(log_{10}(n))$
-. We divided the input by 10 for every iteration, so the time complexity is $O(log_{10}(n))$
-Space complexity : $O(1)$.
+Time complexity : ln(n)
+. We divided the input by 10 for every iteration, so the time complexity is ln(n)
+Space complexity : O(1).
 
 
  My solution:
