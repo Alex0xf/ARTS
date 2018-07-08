@@ -48,8 +48,8 @@ public class Solution {
 ```
 Complexity Analysis
 
-Time complexity : ln(n)
-. We divided the input by 10 for every iteration, so the time complexity is ln(n)
+Time complexity : ln(n).
+We divided the input by 10 for every iteration, so the time complexity is ln(n)
 Space complexity : O(1).
 
 
@@ -95,11 +95,11 @@ The classifier we’ll be using is a RandomForestClassifier (RFC), because it’
 <img alt="2st_week_ARTS-wine_result.png" src="2st_week_ARTS.assets/2st_week_ARTS-wine_result.png" width="" height="" >
 97% of the time we were able to predict correctly the quality of a wine based only on its description.
 End note:
-        **We can get more kinds of dataset.**
-        **Maybe with a larger dataset a Multinomial Naive Bayes would be as good and more performant.**
-        **We could binarize / encode them to be classified.**
+        1.We can get more kinds of dataset.
+        2.Maybe with a larger dataset a Multinomial Naive Bayes would be as good and more performant.
+        3.We could binarize / encode them to be classified.
 
-Many times we would feel that learning knowledge is boring. Maybe we can try to experiment on a real life example. It always worked better when the subject is something that passionates us.
+Conclusion:Many times we would feel that learning knowledge is boring. Maybe we can try to experiment on a real life example. It always worked better when the subject is something that passionates us.
 
 
 ## Tip
