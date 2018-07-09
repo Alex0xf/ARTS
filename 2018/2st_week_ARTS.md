@@ -1,4 +1,4 @@
-# 2st week ARTS
+# 2nd week ARTS
 ## Algorithm
 ### 1.[Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
 Problem Explanation:
