@@ -1,6 +1,6 @@
 # 2st week ARTS
 ## Algorithm
-### [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
+### 1.[Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
 Problem Explanation:
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
@@ -80,6 +80,108 @@ Optimize code structure
 1. solve it without conversion
 2. reduce the times of comparisons or loop
 3. edge cases can be excluded at the beginning
+
+### 2.[Check for Palindromes](https://forum.freecodecamp.org/t/freecodecamp-algorithm-challenge-guide-check-for-palindromes/16004)
+**This algorithm is similiar to the first but different.**
+
+#### Problem Explanation:
+ If you are unsure of what a palindrome is, it is a word or phrase that when reversed spells the same thing forwards or backwards. A simple example is mom, when you reverse the letters, it spells the same thing! Another example of a palindrome is race car. When we take out anything that is not a character it becomes racecar which is the same spelled forwards or backwards!
+#### Basic Code Solution:
+```javaScript
+function palindrome(str) {
+  return str.replace(/[\W_]/g, '').toLowerCase() ===
+         str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+}
+```
+#### Code Explanation:
+- We start by using regular expressions to replace any white space or non-alphanumeric characters with nothing (or null), which essentially removes them from the string.
+
+- Next we chain .toLowerCase() to remove any capital letters because A is a different character than a. The problem did not ask us to worry about making sure the case of the characters was identical, just the spelling.
+
+- Our next step is to take our string and .split() it, .reverse() it, and finally .join() it back together.
+
+- Last step is to check that the string is the same forwards and backwards and return our result!
+
+#### Intermediate Code Solution:
+```javaScript
+function palindrome(str) {
+  str = str.toLowerCase().replace(/[\W_]/g, '');
+  for(var i = 0, len = str.length - 1; i < len/2; i++) {
+    if(str[i] !== str[len-i]) {
+      return false;
+    }
+  }
+  return true;
+}
+```
+#### Code Explanation:
+- We start by using the same methods of replacing characters we don’t want in the string using RegEx's, regular expressions, and then make our string lowercase.
+
+- Next we set up our for loop and declare an index i to keep track of the loop. We set our escape sequence to when i is greater than the length of the string divided by two, which tells the loop to stop after the halfway point of the string. And finally we set i to increment after every loop.
+
+- Inside of each loop we want to check that the letter in element [i] is equal to the letter in the length of the string minus i, [str.length - i]. Each loop, the element that is checked on both sides of the string moves closer to the center until we have checked all of the letters. If at any point the letters do not match, we return false. If the loop completes successfully, it means we have a palindrome and therefore we return true!
+#### Advanced Code Solution
+```javaScript
+//this solution performs at minimum 7x better, at maximum infinitely better.
+//read the explanation for the reason why. I just failed this in an interview.
+function palindrome(str) {
+  //assign a front and a back pointer
+  let front = 0;
+  let back = str.length - 1;
+
+  //back and front pointers won't always meet in the middle, so use (back > front)
+  while (back > front) {
+    //increments front pointer if current character doesn't meet criteria
+    while ( str[front].match(/[\W_]/) ) {
+      front++;
+      continue;
+    }
+    //decrements back pointer if current character doesn't meet criteria
+    while ( str[back].match(/[\W_]/) ) {
+      back--;
+      continue;
+    }
+    //finally does the comparison on the current character
+    if ( str[front].toLowerCase() !== str[back].toLowerCase() ) return false
+    front++;
+    back--;
+  }
+
+  //if the whole string has been compared without returning false, it's a palindrome!
+  return true;
+
+}
+```
+#### Code Explanation:
+I was given this problem in an interview (spoiler: I wasn’t hired :frowning: ) I quickly arrived at the basic solution, and the interviewer told me to make it better. The algorithm would take way too long if he passed the Bible as the string. He wanted it to be instant.
+
+The simpler solutions perform very poorly on long strings because they operate on the whole string multiple times (toLowerCase(), replace(), split(), reverse(), join()) before comparing the whole string twice.
+
+The beauty of this solution is it never needs to read through the whole string, even once, to know that it’s not a palindrome. Why read through the whole string if you can tell that it’s not a palindrome just by looking at two letters?
+
+Uses a while loop instead of a for loop as a best practice - because we are using two variables, one is the index starting from the beginning of the string, and the other starts at the end of the string.
+
+#### My Solution
+```javaScript
+function palindrome(str) {
+
+  str=str.replace(/\s+/g,"");//clear blank
+  str = str.replace(/\W+/gi,'');//clear the punctuation
+  str = str.replace(/[-_():]/g,"");
+  str=str.toLowerCase();//Uppercase and lowercase letters
+
+  var strLength=str.length;
+  for(var i=0;i<(strLength+1)/2;i++){
+    if(str[i]!=str[strLength-1-i]){
+     return false;
+    }
+  }
+  return true;
+}
+
+```
+
+
 
 ## Review
 ### 1. [Wine Ratings Prediction using Machine Learning](https://towardsdatascience.com/wine-ratings-prediction-using-machine-learning-ce259832b321)
