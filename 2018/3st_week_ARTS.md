@@ -33,8 +33,9 @@ Finally, we return the value of romanized.
 
 ## Review
 ### 1.[What Happens When a Computer Runs Your Life](https://medium.com/s/futurehuman/what-happens-when-a-computer-runs-your-life-4ba7ec152728)
-
-
+Max Hawkins whose job is a software engineer let an algorithm pick where he lives, what he does—even what tattoo to get.And this time he let the algorithm decide his first tattoo which makes him panicking because the picture and where to put it on is totally random.
+In a world where technologies promise humans ever more control over their choices and preferences, Hawkins has decided to surrender his will to the whims of computer algorithms.
+He’s created programs that randomly choose where he eats, what he wears, where he lives, what music he listens to, and how he spends his time. In so doing, he says he’s discovered a different kind of freedom.
 
 
 ## Tip
