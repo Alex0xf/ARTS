@@ -165,9 +165,8 @@ https://blog.yellowant.com/rest-api-calls-made-easy-7e620e4d3e82
 #### 1.以下是我对API的了解过程：
 What is API?--自己的理解是 API是客户端与服务器交互的一个媒介。这里的客户端和服务器都是相对应而言的，发出请求的一方都可以被看成是客户端，而响应并操作的看成服务器。API负责记录客户端的请求，发送给服务器并告知需求，服务器接收请求并给出响应，API再返回响应的结果给客户端。
 <p>
-
-![](http://pbok9izql.bkt.clouddn.com/1st%20week%20ARTS-1st%20week%20ARTS-65b1256a.png =300x300)   ![](http://pbok9izql.bkt.clouddn.com/1st%20week%20ARTS-1st%20week%20ARTS-b17b532f.png =350x300)
-
+<img  src="http://pbok9izql.bkt.clouddn.com/1st%20week%20ARTS-1st%20week%20ARTS-65b1256a.png" width="300px" height="300px" >
+<img  src="http://pbok9izql.bkt.clouddn.com/1st%20week%20ARTS-1st%20week%20ARTS-b17b532f.png " width="350px" height="300px" >
 </p>
 
 
