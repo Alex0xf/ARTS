@@ -36,10 +36,13 @@ Finally, we return the value of romanized.
 Max Hawkins whose job is a software engineer let an algorithm pick where he lives, what he does—even what tattoo to get.And this time he let the algorithm decide his first tattoo which makes him panicking because the picture and where to put it on is totally random.
 In a world where technologies promise humans ever more control over their choices and preferences, Hawkins has decided to surrender his will to the whims of computer algorithms.
 He’s created programs that randomly choose where he eats, what he wears, where he lives, what music he listens to, and how he spends his time. In so doing, he says he’s discovered a different kind of freedom.
-
+A couple of months ago, the computer sent him an action asking him to kill a deer. It makes him sinking into a contradiction but he I started thinking about this and he ended up going on a hunting trip with a friend.
+I think maybe this is how technology makes us improving.We will continue to encounter new things. As a technician we should not resist but learn to embrace it even if it is difficult.We should try more and find more so finally we can get more.
 
 ## Tip
 ### 1.
 
 
 ## Share
+### [How to read a paper]()
+This is an article a friend recommd us to read.
