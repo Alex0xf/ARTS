@@ -1,4 +1,4 @@
-# 5th week ARTS
+# 7th week ARTS
 ## Algorithm
 ### 1.[DNA Pairing](https://forum.freecodecamp.org/t/freecodecamp-algorithm-challenge-guide-dna-pairing/16009)
 Problem Explanation:
