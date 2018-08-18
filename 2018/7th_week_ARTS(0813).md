@@ -59,10 +59,11 @@ function pairElement(str) {
 ```
 
 ## Review
-### 97 Things Every Should Know——4th part
-#### []()
-
-
+### 97 Things Every Should Know——4th part(5/97)
+#### [Beauty Is in Simplicity](https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/thing_05/index.html)
+Beauty of style and harmony and grace and good rhythm depends on simplicity.
+我们在写代码中解决了很多问题：代码的可读性，可维护性，速度以及如何写出优美的代码，而这一切都源于简单性。
+对于美的认知，不同类型的人有着不同的看法，作者认为美的基础是简单。好的代码都有一个共性，无论整个应用程序或系统有多复杂，各个部分都必须保持简单。每个模块/对象最好只负责一个功能，责任单一。
 
 ## Tip
 ### 1. mybatis绑定错误-- Invalid bound statement (not found)
@@ -141,4 +142,9 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 2. 在generatorConfig.xml中加入数据库驱动包的绝对路径:
 <classPathEntry location="xxx\xxx\xxx.jar" /> (xxx\xxx\xxx.jar 为数据库驱动包的绝对路径)
 
+3. 在maven里配置一个命令
+
+mybatis-generator:generate -e
+
 ## Share
+最近在做一个项目，感慨之前学的东西看起来学会了，真正用起来还差的远。学习时对一个知识的理解和运用很容易就测出来了。不要想着所谓的捷径，踏踏实实学才是最有效的。感觉到压力是因为自己在成长。
